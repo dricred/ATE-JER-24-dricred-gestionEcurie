@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class ResponsableTechnique extends Employes {
 
     public ResponsableTechnique(String nom, String prénom, float salaire) {
