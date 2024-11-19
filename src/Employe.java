@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class Employes {
+public abstract class Employe {
     // Les couleurs d'affichage
     private static final String CYAN = "\u001B[36m";
     private static final String RESET = "\u001B[0m";
@@ -9,7 +9,7 @@ public abstract class Employes {
     public String prénom;
     public float salaire;
 
-    public Employes(String nom, String prénom, float salaire) {
+    public Employe(String nom, String prénom, float salaire) {
         this.nom = nom;
         this.prénom = prénom;
         this.salaire = salaire;
@@ -27,14 +27,16 @@ public abstract class Employes {
             "Paul", "Maxime", "Gabriel", "Lucas", "Nathan", "Hugo", "Ethan", "Léo", "Mathis", "Tom",
             "Noah", "Théo", "Raphaël", "Enzo", "Antoine", "Louis", "Adam", "Jules", "Arthur", "Sacha",
             "Clément", "Benjamin", "Alexandre", "Axel", "Liam", "Romain", "Eliott", "Timéo", "Valentin", "Maël",
-            "Oscar", "Gaspard", "Victor", "Martin", "Léna", "Eva", "Camille", "Adrien", "Bastien", "Esteban", "Nolan"
+            "Oscar", "Gaspard", "Victor", "Martin", "Léna", "Eva", "Camille", "Adrien", "Bastien", "Esteban", "Nolan",
+            "Emerick", "Lucien", "Manu", "Thomas", "David"
     };
 
     private static String[] noms = {
-            "Dupont", "Martin", "Bernard", "Thomas", "Petit", "Durand", "Leroy", "Moreau", "Simon", "Laurent",
-            "Lefebvre", "Michel", "Garcia", "David", "Bertrand", "Roux", "Vincent", "Fournier", "Girard", "Bonnet",
+            "Dupont", "Martin", "Bernard", "Thomas", "Petit", "Durand", "Leroy", "Moreau", "Simons", "Laurent",
+            "Lefebvre", "Michel", "Garcia", "Bertrand", "Roux", "Vincent", "Fournier", "Girard", "Bonnet",
             "Dupuis", "Moulin", "Perrot", "Blanc", "Renard", "Gauthier", "Perrin", "Marchand", "Lemoine", "Gaillard",
-            "Brun", "Clément", "Barbier", "Maillard", "Garnier", "Chauvet", "Caron", "Bouchet", "Morin", "Langlois"
+            "Brun", "Clément", "Barbier", "Maillard", "Garnier", "Chauvet", "Caron", "Bouchet", "Morin", "Langlois",
+            "Mahrez", "Laporte", "Leroy", "Chevalier", "Lechauve"
     };
 
     /**

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ResponsableTechnique extends Employes {
+public class ResponsableTechnique extends Employe {
 
     public ResponsableTechnique(String nom, String prénom, float salaire) {
         super(nom, prénom, salaire);
@@ -13,5 +13,10 @@ public class ResponsableTechnique extends Employes {
     @Override
     public String getRoles() {
         return "Responsable technique";
+    }
+
+    public void reparerVéhicule(Véhicule véhicule) {
+        véhicule.setEtatVéhicule(Véhicule.EtatVéhicule.values() [véhicule.getEtatVéhicule().ordinal() + 1]);
+        System.out.println(véhicule);
     }
 }

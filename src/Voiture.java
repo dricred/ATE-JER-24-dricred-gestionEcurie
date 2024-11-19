@@ -1,7 +1,7 @@
 public class Voiture extends Véhicule {
 
-    public Voiture(String marque, String nom) {
-        super(marque, nom);
+    public Voiture(String marque, String nom, EtatVéhicule etatVéhicule) {
+        super(marque, nom, etatVéhicule);
     }
 
     @Override

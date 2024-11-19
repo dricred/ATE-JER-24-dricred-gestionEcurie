@@ -1,4 +1,4 @@
-public class Pilote extends Employes {
+public class Pilote extends Employe {
 
     private Véhicule véhicule;
 

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Ingenieure extends Employes {
+public class Ingenieur extends Employe {
 
     // Les couleurs d'affichage
     private static final String RED = "\u001B[31m";
@@ -9,11 +9,11 @@ public class Ingenieure extends Employes {
 
     private static final int NBR_TYPE_VEHICULES= 2;
 
-    public Ingenieure(String nom, String prénom, float salaire) {
+    public Ingenieur(String nom, String prénom, float salaire) {
         super(nom, prénom, salaire);
     }
 
-    public Ingenieure(float salaire) {
+    public Ingenieur(float salaire) {
         super(genererNomAleatoire(), genererPrénomAleatoire(), salaire);
     }
 
@@ -35,10 +35,10 @@ public class Ingenieure extends Employes {
 
         switch (choix) {
             case 1:
-                véhicules.add(new Voiture(écurie.getNom(), "voiture v-" + (véhicules.size() + 1)));
+                véhicules.add(new Voiture(écurie.getNom(), "voiture v-" + (véhicules.size() + 1), Véhicule.EtatVéhicule.EXCELLANT));
                 break;
             case 2:
-                véhicules.add(new Moto(écurie.getNom(), "moto v-" + (véhicules.size() + 1)));
+                véhicules.add(new Moto(écurie.getNom(), "moto v-" + (véhicules.size() + 1), Véhicule.EtatVéhicule.EXCELLANT));
                 break;
         }
 
